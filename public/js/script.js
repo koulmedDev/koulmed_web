@@ -52,3 +52,34 @@ function toggleMenu() {
     setupCarousel();
     window.addEventListener('resize', setupCarousel);
 });
+
+
+//pour le faq
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const questionBtn = item.querySelector('.faq-question');
+
+      questionBtn.addEventListener('click', function() {
+        // Fermer toutes les réponses
+        faqItems.forEach(faqItem => {
+          if (faqItem !== item) {
+            faqItem.classList.remove('active');
+            const toggleBtn = faqItem.querySelector('.faq-toggle');
+            toggleBtn.innerHTML = '<span class="plus">+</span>';
+          }
+        });
+
+        // Ouvrir/fermer la réponse courante
+        item.classList.toggle('active');
+        const toggleBtn = item.querySelector('.faq-toggle');
+
+        if (item.classList.contains('active')) {
+          toggleBtn.innerHTML = '<span class="minus">−</span>';
+        } else {
+          toggleBtn.innerHTML = '<span class="plus">+</span>';
+        }
+      });
+    });
+  });

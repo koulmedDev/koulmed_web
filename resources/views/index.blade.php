@@ -16,8 +16,12 @@
 @include('components.about')
 {{-- section a propos --}}
 
-{{-- section a propos --}}
+{{-- section rdv --}}
 @include('components.rdv')
-{{-- section a propos --}}
+{{-- section rdv --}}
+
+{{-- section rdv --}}
+@include('components.faq')
+{{-- section rdv --}}
 
 @endsection
