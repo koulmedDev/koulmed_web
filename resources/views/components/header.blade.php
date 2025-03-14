@@ -10,8 +10,8 @@
     </div>
 
     <ul class="nav-menu" id="navMenu">
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Nos Services</a></li>
+      <li><a href="#acceuil">Accueil</a></li>
+      <li><a href="#services">Nos Services</a></li>
       <li><a href="#">À propos de nous</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
