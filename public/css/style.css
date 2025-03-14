@@ -140,54 +140,57 @@
   /* responsivité des ecrans moyens  */
   @media screen and (max-width: 768px) {
     header {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .hamburger {
-      display: flex;
-      order: 3;
-      margin-left: 20px;
+        display: flex;
+        order: 3;
+        margin-left: 10px;
     }
 
     .logo-container {
-      flex: 1;
-      order: 1;
+        flex: 1;
+        order: 1;
     }
 
     .nav-menu {
-      width: 100%;
-      flex-direction: column;
-      display: none;
-      order: 4;
-      margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        order: 4;
+        margin-top: 10px;
     }
 
     .nav-menu.show {
-      display: flex;
+        display: flex;
     }
 
     .nav-menu li {
-      margin: 10px 0;
-      text-align: center;
+        margin: 10px 0;
+        text-align: center;
     }
+
     .header-buttons {
         order: 2;
         flex-direction: row;
         flex-wrap: nowrap;
-      }
-      .btn-rdv {
-        width: 100px;
-      }
+    }
 
-      .btn-connect {
+    .btn-rdv {
         width: 100px;
-      }
+    }
+
+    .btn-connect {
+        width: 100px;
+    }
+
     .footer-nav {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .footer-nav li {
-      margin: 5px 0;
+        margin: 5px 0;
     }
   }
   /* responsivité des ecrans petits  */
@@ -196,11 +199,11 @@
         flex-direction: row;
         gap: 5px;
         font-size: 12px;
-      }
+    }
 
-      .btn-rdv, .btn-connect {
+    .btn-rdv, .btn-connect {
         padding: 8px 10px;
         font-size: 12px;
         width: 100px;
-      }
+    }
   }
