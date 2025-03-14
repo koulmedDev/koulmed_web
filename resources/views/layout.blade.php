@@ -6,6 +6,7 @@
   <title>Koulmed</title>
   <link rel="icon" href="{{asset('images/logo.png')}}" type="image/x-icon">
   <link rel="stylesheet" href="{{asset('css/style.css')}}">
+  <link rel="stylesheet" href="{{asset('css/accueil.css')}}">
 </head>
 <body>
   <!-- Header -->
