@@ -1,9 +1,11 @@
 <footer>
     <ul class="footer-nav">
-      <li><a href="#">Nos Services</a></li>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">À propos de nous</a></li>
-      <li><a href="#">Contact</a></li>
+        <li><a href="#acceuil">Accueil</a></li>
+        <li><a href="#services">Nos Services</a></li>
+        <li><a href="#about">À propos de nous</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
     </ul>
 
     <div class="social-icons">

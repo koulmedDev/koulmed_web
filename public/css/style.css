@@ -42,7 +42,7 @@
   }
 
   .nav-menu a:hover {
-    color: #7AB800;
+    color: #78BA25;
   }
 
   .header-buttons {
@@ -52,7 +52,7 @@
 
   .btn-rdv {
     padding: 10px 15px;
-    border: 1px solid #7AB800;
+    border: 1px solid #78BA25;
     border-radius: 5px;
     background-color: white;
     color: #333;
@@ -64,7 +64,7 @@
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #7AB800;
+    background-color: #78BA25;
     color: white;
     cursor: pointer;
     font-size: 14px;
@@ -102,7 +102,7 @@
   }
 
   .footer-nav a:hover {
-    color: #7AB800;
+    color: #78BA25;
   }
 
   .social-icons {

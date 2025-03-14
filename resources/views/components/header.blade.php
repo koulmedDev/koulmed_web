@@ -12,7 +12,8 @@
     <ul class="nav-menu" id="navMenu">
       <li><a href="#acceuil">Accueil</a></li>
       <li><a href="#services">Nos Services</a></li>
-      <li><a href="#">À propos de nous</a></li>
+      <li><a href="#about">À propos de nous</a></li>
+      <li><a href="#blog">Blog</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
 

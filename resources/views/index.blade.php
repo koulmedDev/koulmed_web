@@ -12,4 +12,8 @@
 @include('components.services')
 {{-- section services --}}
 
+{{-- section a propos --}}
+@include('components.about')
+{{-- section a propos --}}
+
 @endsection

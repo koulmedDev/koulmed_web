@@ -1,6 +1,6 @@
 .hero-section {
     position: relative;
-    background-color: #0055A4;
+    background-color: #0C55A2;
     color: white;
     border-radius: 10px;
     margin: 30px;
@@ -10,7 +10,7 @@
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 50px 20px 0;
 }
 
 .hero-content {
@@ -22,14 +22,14 @@
 }
 
 .hero-title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
 .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-bottom: 30px;
     opacity: 0.9;
 }
@@ -50,7 +50,7 @@
 
 .subscribe-button {
     padding: 12px 20px;
-    background-color: #7AB800;
+    background-color: #78BA25;
     color: white;
     border: none;
     border-radius: 0 4px 4px 0;
@@ -79,6 +79,11 @@
     align-items: center;
     background-color: #1D2B3A;
     padding: 20px;
+    height: 20vh;
+    margin-top: -50px;
+    margin-left: 4rem;
+    position: relative;
+    z-index: 1;
 }
 
 .partner {
@@ -206,7 +211,7 @@
     }
 
     .subscribe-form {
-        flex-direction: row; /* Maintenir en ligne comme dans l'image */
+        flex-direction: row;
     }
 
     .email-input {
