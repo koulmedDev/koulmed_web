@@ -89,7 +89,7 @@
 }
 
 /* moyens ecrans */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .services-section {
         padding: 40px 15px;
     }
@@ -99,7 +99,6 @@
         margin-bottom: 30px;
     }
 
-    /* Version carrousel */
     .services-carousel {
         display: flex;
         overflow-x: hidden;
@@ -133,7 +132,7 @@
         font-size: 0.85rem;
     }
 
-    /* Afficher les indicateurs de navigation */
+
     .carousel-indicators {
         display: flex;
         justify-content: center;
@@ -154,7 +153,6 @@
         background-color: #0C55A2;
     }
 
-    /* Navigation */
     .carousel-nav {
         display: flex;
         justify-content: space-between;
@@ -182,7 +180,6 @@
     }
 }
 
-/* petit ecrans */
 @media screen and (max-width: 480px) {
     .services-section {
         padding: 30px 10px;
@@ -210,4 +207,4 @@
     .service-description {
         font-size: 0.8rem;
     }
-}
+} */

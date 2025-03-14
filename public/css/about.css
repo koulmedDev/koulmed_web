@@ -2,6 +2,7 @@
 .nursing-services {
     padding: 60px 0;
     font-family: Arial, sans-serif;
+    overflow: hidden; /* Empêche le débordement */
   }
 
   .container {
@@ -34,10 +35,11 @@
     line-height: 1.2;
   }
 
- .card-header h3 {
+  .card-header h3 {
     margin: 0 0 10px 0;
     font-size: 20px;
   }
+
   .service-content h3 {
     margin: 0 0 10px 0;
     font-size: 20px;
@@ -48,41 +50,40 @@
     color: #666;
     line-height: 1.6;
   }
+
   .floating-card p {
     margin: 0;
     color: #666;
     line-height: 1.6;
   }
-  .play-button, .card-header, .icon-container i{
+
+  .play-button, .card-header, .icon-container i {
     color: #78BA25;
   }
 
-  /* Service cards */
+  /* Service cards - style exact de l'image */
   .service-card {
     display: flex;
     align-items: flex-start;
     margin-bottom: 30px;
     gap: 20px;
+    max-width: 100%;
   }
 
   .icon-container {
     width: 70px;
     height: 70px;
     background-color: #E6F0F9;
-    border-radius: 10px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
   }
-  .icon-container i {
-    font-size: 36px;
-    margin-top: 15px;
-  }
 
-  .service-icon {
-    width: 40px;
-    height: 40px;
+  .icon-container i {
+    font-size: 32px;
+    color: #78BA25;
   }
 
   /* CTA section */
@@ -97,10 +98,11 @@
     background-color: #78BA25;
     color: white;
     padding: 15px 30px;
-    border-radius: 15px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
+    font-size: 16px;
   }
 
   .cta-button:hover {
@@ -108,8 +110,8 @@
   }
 
   .play-button {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: #f5f5f5;
     border-radius: 50%;
     display: flex;
@@ -118,37 +120,41 @@
     justify-content: center;
     transition: background-color 0.3s;
   }
+
   .play-button:hover {
     background-color: #0C55A2;
     color: white;
   }
-  .play-button i {
-    font-size: 24px;
 
+  .play-button i {
+    font-size: 18px;
   }
-  /* Image section */
+
+  /* Image section - exactement comme l'image */
   .image-container {
     position: relative;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
+    height: 100%;
   }
 
   .main-image {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;
+    border-radius: 15px;
+    object-fit: cover;
   }
 
   .floating-card {
     position: absolute;
-    bottom: 20px;
-    left: -10px;
+    bottom: 60px;
+    right: 20px;
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 320px;
   }
 
   .card-header {
@@ -159,59 +165,104 @@
   }
 
   .card-icon {
-    width: 24px;
-    height: 24px;
+    font-size: 22px;
   }
 
-  /* Responsive styles */
+  /* Responsive styles - pour correspondre exactement à l'image */
+
   @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
+    .nursing-services {
+      padding: 40px 0;
     }
 
-   .col-left h2 {
-      font-size: 30px;
+    .row {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .col-left h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .service-card {
+      margin-bottom: 20px;
+    }
+
+    .service-content h3 {
+      font-size: 18px;
+    }
+
+    .service-content p {
+      font-size: 14px;
+    }
+
+    .floating-card {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      padding: 15px;
+      max-width: 250px;
+    }
+
+    .floating-card p {
+      font-size: 14px;
+    }
+
+    .card-header h3 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .nursing-services {
+      padding: 30px 0;
+    }
+
+    .container {
+      padding: 0 15px;
+    }
+
+    .row {
+      gap: 20px;
+    }
+
+    .col-left h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .service-card {
+      gap: 15px;
+    }
+
+    .icon-container {
+      width: 60px;
+      height: 60px;
+    }
+
+    .service-content p {
+      font-size: 13px;
+    }
+
+    .cta-button {
+      padding: 12px 25px;
+      font-size: 14px;
+    }
+
+    .play-button {
+      width: 40px;
+      height: 40px;
     }
 
     .floating-card {
       position: relative;
       bottom: auto;
       right: auto;
+      max-width: 100%;
       margin-top: -50px;
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .nursing-services {
-      padding: 40px 0;
-    }
-
-    .col-left h2 {
-      font-size: 24px;
-    }
-
-    .service-card {
-      flex-direction: column;
-    }
-
-    .icon-container {
-      margin-bottom: 10px;
-    }
-
-    .cta-container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .cta-button {
-      width: 100%;
-      text-align: center;
-    }
-
-    .floating-card {
-      padding: 15px;
+      margin-left: 20px;
+      margin-right: 20px;
+      z-index: 2;
     }
   }

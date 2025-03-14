@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
   }
+  /* .containersite {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  } */
 
   body {
     min-height: 100vh;
@@ -139,9 +145,7 @@
 
   /* responsivité des ecrans moyens  */
   @media screen and (max-width: 768px) {
-    header {
-        flex-wrap: wrap;
-    }
+
 
     .hamburger {
         display: flex;

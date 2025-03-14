@@ -103,7 +103,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     main {
         padding: 10px;
     }
@@ -127,7 +127,7 @@
         padding-right: 0;
         margin-bottom: 0;
         justify-content: flex-start;
-        padding-bottom: 90px; /* Espace pour la barre de partenaires */
+        padding-bottom: 90px; 
     }
 
     .hero-title {
@@ -239,4 +239,4 @@
     .partner-logo {
         max-width: 50px;
     }
-}
+} */

@@ -18,7 +18,7 @@
     </ul>
 
     <div class="header-buttons">
-      <button class="btn-rdv">Prendre un rendez-vous</button>
+      <a class="btn-rdv" href="#rdv" style="text-decoration: none">Prendre un rendez-vous</a>
       <button class="btn-connect">Se connecter</button>
     </div>
   </header>
