@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="{{asset('css/faq.css')}}">
   <link rel="stylesheet" href="{{asset('css/avis.css')}}">
   <link rel="stylesheet" href="{{asset('css/blog.css')}}">
+  <link rel="stylesheet" href="{{asset('css/contact.css')}}">
 
 </head>
 <body>

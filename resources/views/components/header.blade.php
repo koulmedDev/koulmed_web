@@ -14,7 +14,7 @@
       <li><a href="#services">Nos Services</a></li>
       <li><a href="#about">À propos de nous</a></li>
       <li><a href="#blog">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
 
     <div class="header-buttons">

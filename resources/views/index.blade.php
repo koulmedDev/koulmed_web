@@ -28,7 +28,11 @@
 @include('components.avis')
 {{-- section rdv --}}
 
-{{-- section rdv --}}
+{{-- section blog --}}
 @include('components.blog')
-{{-- section rdv --}}
+{{-- section blog --}}
+
+{{-- section contact --}}
+@include('components.contact')
+{{-- section contact --}}
 @endsection
