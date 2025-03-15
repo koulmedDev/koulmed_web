@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="{{asset('css/about.css')}}">
   <link rel="stylesheet" href="{{asset('css/rdv.css')}}">
   <link rel="stylesheet" href="{{asset('css/faq.css')}}">
+  <link rel="stylesheet" href="{{asset('css/avis.css')}}">
 
 </head>
 <body>

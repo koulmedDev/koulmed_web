@@ -20,8 +20,11 @@
 @include('components.rdv')
 {{-- section rdv --}}
 
-{{-- section rdv --}}
+{{-- section faq --}}
 @include('components.faq')
-{{-- section rdv --}}
+{{-- section faq --}}
 
+{{-- section rdv --}}
+@include('components.avis')
+{{-- section rdv --}}
 @endsection

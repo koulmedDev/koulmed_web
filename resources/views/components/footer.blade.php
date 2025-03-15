@@ -5,7 +5,8 @@
         <li><a href="#about">À propos de nous</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#avis">Avis aux clients</a></li>
     </ul>
 
     <div class="social-icons">
