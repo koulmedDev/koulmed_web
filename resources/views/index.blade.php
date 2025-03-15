@@ -27,4 +27,8 @@
 {{-- section rdv --}}
 @include('components.avis')
 {{-- section rdv --}}
+
+{{-- section rdv --}}
+@include('components.blog')
+{{-- section rdv --}}
 @endsection
