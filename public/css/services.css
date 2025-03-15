@@ -150,7 +150,7 @@
     }
 
     .indicator.active {
-        background-color: #0C55A2;
+        background-color: #0056b3;
     }
 
     .carousel-nav {
@@ -176,7 +176,7 @@
         align-items: center;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         cursor: pointer;
-        color: #0C55A2;
+        color: #0056b3;
     }
 }
 

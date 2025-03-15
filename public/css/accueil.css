@@ -1,6 +1,6 @@
 .hero-section {
     position: relative;
-    background-color: #0C55A2;
+    background-color: #0056b3;
     color: white;
     border-radius: 10px;
     margin: 30px;
@@ -127,7 +127,7 @@
         padding-right: 0;
         margin-bottom: 0;
         justify-content: flex-start;
-        padding-bottom: 90px; 
+        padding-bottom: 90px;
     }
 
     .hero-title {

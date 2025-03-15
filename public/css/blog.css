@@ -16,8 +16,8 @@
   }
 
   .blog-title {
-    color: #8bc34a;
-    font-size: 28px;
+    color: #78BA25;
+    font-size: 35px;
     margin: 0 0 10px 0;
   }
 
@@ -63,7 +63,7 @@
   .blog-card {
     flex: 1;
     background: white;
-    border-radius: 10px;
+    border-radius: 30px;
     overflow: hidden;
     height: 80vh;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -103,5 +103,5 @@
   }
 
   .blog-read-more:hover {
-    background-color: #0C55A2;
+    background-color: #0056b3;
   }

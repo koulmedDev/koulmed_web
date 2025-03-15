@@ -14,10 +14,10 @@
         <!-- Boutons de navigation -->
         <div class="blog-navigation">
           <button class="nav-button prev-button">
-            <span>&lsaquo;</span>
+            <i class="fas fa-angle-left"></i>
           </button>
           <button class="nav-button next-button">
-            <span>&rsaquo;</span>
+            <i class="fas fa-angle-right"></i>
           </button>
         </div>
       </div>
