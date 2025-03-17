@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,15 +17,12 @@ Route::post('/admin/logout', [AdminController::class, 'logout'])->name('logout')
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin/index', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 
-    Route::get('/admin/blog/ajouter', function () {
-        return view('admin.ajouterblog');
-    })->name('blog.form');
-
-    Route::get('/admin/blog/all', function () {
-        return view('admin.allblogs');
-    })->name('blog.all');
-
-    Route::get('/admin/blog/historique', function () {
-        return view('admin.historiqueblog');
-    })->name('blog.historique');
+    // Blog routes
+    Route::get('/admin/blog/ajouter', [BlogController::class, 'showAddForm'])->name('blog.form');
+    Route::post('/admin/blog/ajouter', [BlogController::class, 'store'])->name('blog.store');
+    Route::get('/admin/blog/all', [BlogController::class, 'showAllBlogs'])->name('blog.all');
+    Route::get('/admin/blog/historique', [BlogController::class, 'showBlogHistory'])->name('blog.historique');
+    Route::get('/admin/blog/edit/{id}', [BlogController::class, 'edit'])->name('blog.edit');
+    Route::put('/admin/blog/update/{id}', [BlogController::class, 'update'])->name('blog.update');
+    Route::delete('/admin/blog/delete/{id}', [BlogController::class, 'destroy'])->name('blog.delete');
 });
