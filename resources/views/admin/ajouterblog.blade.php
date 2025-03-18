@@ -27,23 +27,17 @@
                             <label for="titre">Titre</label>
                             <input type="text" class="form-control" id="titre" name="titre" value="{{ old('titre') }}" required>
                         </div>
-                        
+
                         <div class="form-group mt-3">
                             <label for="image">Image</label>
                             <input type="file" class="form-control" id="image" name="image" required>
                             <small class="form-text text-muted">Formats acceptés: jpeg, png, jpg, gif. Taille max: 2Mo</small>
                         </div>
-                        
+
                         <div class="form-group mt-3">
                             <label for="contenu">Contenu</label>
                             <textarea class="form-control" id="contenu" name="contenu" rows="10" required>{{ old('contenu') }}</textarea>
                         </div>
-                        
-                        <div class="form-check mt-3">
-                            <input type="checkbox" class="form-check-input" id="publie" name="publie" checked>
-                            <label class="form-check-label" for="publie">Publier immédiatement</label>
-                        </div>
-                        
                         <div class="form-group mt-4">
                             <button type="submit" class="btn btn-primary">Enregistrer</button>
                             <a href="{{ route('blog.all') }}" class="btn btn-secondary">Annuler</a>
@@ -57,7 +51,7 @@
 
 @push('scripts')
 <script>
-   
+
     document.addEventListener('DOMContentLoaded', function() {
         // je vais utiliser ici CKEditor (nécessite d'inclure CKEditor dans votre projet)
         // ClassicEditor

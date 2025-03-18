@@ -13,6 +13,5 @@ class Blog extends Model
         'titre',
         'image',
         'contenu',
-         'publie'
     ];
 }

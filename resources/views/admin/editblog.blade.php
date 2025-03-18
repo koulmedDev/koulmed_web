@@ -34,7 +34,7 @@
                             <div>
                                 <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="{{ $blog->titre }}" width="200" class="img-thumbnail mb-2">
                             </div>
-                            <label for="image">Changer l'image (optionnel)</label>
+                            <label for="image">Changer l'image</label>
                             <input type="file" class="form-control" id="image" name="image">
                             <small class="form-text text-muted">Formats acceptés: jpeg, png, jpg, gif. Taille max: 2Mo</small>
                         </div>
@@ -43,12 +43,6 @@
                             <label for="contenu">Contenu</label>
                             <textarea class="form-control" id="contenu" name="contenu" rows="10" required>{{ old('contenu', $blog->contenu) }}</textarea>
                         </div>
-
-                        <div class="form-check mt-3">
-                            <input type="checkbox" class="form-check-input" id="publie" name="publie" {{ $blog->publie ? 'checked' : '' }}>
-                            <label class="form-check-label" for="publie">Publié</label>
-                        </div>
-
                         <div class="form-group mt-4">
                             <button type="submit" class="btn btn-primary">Mettre à jour</button>
                             <a href="{{ route('blog.all') }}" class="btn btn-secondary">Annuler</a>

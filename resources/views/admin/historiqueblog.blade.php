@@ -17,7 +17,6 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>Titre</th>
-                                    <th>Statut</th>
                                     <th>Date de création</th>
                                     <th>Date de modification</th>
                                     <th>Actions</th>
@@ -28,13 +27,6 @@
                                     <tr>
                                         <td>{{ $blog->id }}</td>
                                         <td>{{ $blog->titre }}</td>
-                                        <td>
-                                            @if ($blog->publie)
-                                                <span class="badge bg-success">Publié</span>
-                                            @else
-                                                <span class="badge bg-warning">Non publié</span>
-                                            @endif
-                                        </td>
                                         <td>{{ $blog->created_at->format('d/m/Y H:i') }}</td>
                                         <td>{{ $blog->updated_at->format('d/m/Y H:i') }}</td>
                                         <td>

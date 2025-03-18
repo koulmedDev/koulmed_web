@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -36,18 +35,16 @@ class BlogController extends Controller
             'titre' => 'required|string|max:255',
             'contenu' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'publie' => 'boolean',
         ]);
 
         $image = $request->file('image');
         $imageName = time() . '.' . $image->extension();
-        $image->storeAs('public/blogs', $imageName);
+        $image->storeAs('blogs', $imageName, 'public');
 
         Blog::create([
             'titre' => $request->titre,
             'contenu' => $request->contenu,
             'image' => $imageName,
-            'publie' => $request->has('publie'),
         ]);
 
         return redirect()->route('blog.all')
@@ -70,7 +67,6 @@ class BlogController extends Controller
             'titre' => 'required|string|max:255',
             'contenu' => 'required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'publie' => 'boolean',
         ]);
 
         if ($request->hasFile('image')) {
@@ -87,7 +83,6 @@ class BlogController extends Controller
 
         $blog->titre = $request->titre;
         $blog->contenu = $request->contenu;
-        $blog->publie = $request->has('publie');
         $blog->save();
 
         return redirect()->route('blog.all')
