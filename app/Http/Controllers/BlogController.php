@@ -89,6 +89,13 @@ class BlogController extends Controller
             ->with('success', 'Blog mis à jour avec succès');
     }
 
+    //affichage des détails du blog
+public function show($id)
+{
+    $blog = Blog::findOrFail($id);
+    return view('admin.showblog', compact('blog'));
+}
+
     //suppression de l'image
     public function destroy($id)
     {

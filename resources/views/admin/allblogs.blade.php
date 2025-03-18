@@ -41,9 +41,12 @@
                                             <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="{{ $blog->titre }}" width="100">
                                         </td>
                                         <td>{{ $blog->titre }}</td>
-                                        
+
                                         <td>{{ $blog->created_at->format('d/m/Y H:i') }}</td>
                                         <td>
+                                            <a href="{{ route('blog.show', $blog->id) }}" class="btn btn-sm btn-success">
+                                                <i class="fas fa-eye"></i> Voir détails
+                                            </a>
                                             <a href="{{ route('blog.edit', $blog->id) }}" class="btn btn-sm btn-info">
                                                 <i class="fas fa-edit"></i> Modifier
                                             </a>
