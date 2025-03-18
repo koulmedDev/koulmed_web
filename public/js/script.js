@@ -83,3 +83,42 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+
+  //pour les boton next et suivant de blog
+  document.addEventListener('DOMContentLoaded', function() {
+    const blogCards = document.querySelectorAll('.blog-card');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    let currentCardIndex = 0;
+    const cardsPerPage = 3;
+
+    // Masquer les cartes qui ne devraient pas être visibles au départ
+    function updateVisibility() {
+        blogCards.forEach((card, index) => {
+            if (index >= currentCardIndex && index < currentCardIndex + cardsPerPage) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Configurer les boutons
+    prevButton.addEventListener('click', function() {
+        if (currentCardIndex > 0) {
+            currentCardIndex -= cardsPerPage;
+            updateVisibility();
+        }
+    });
+
+    nextButton.addEventListener('click', function() {
+        if (currentCardIndex + cardsPerPage < blogCards.length) {
+            currentCardIndex += cardsPerPage;
+            updateVisibility();
+        }
+    });
+
+    // Initialiser l'affichage
+    updateVisibility();
+});

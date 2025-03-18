@@ -1,7 +1,4 @@
 <section id="blog">
-
-</section>
-<section id="blog">
     <div class="blog-container">
       <!-- Titre et description -->
       <div class="blog-header">
@@ -24,35 +21,25 @@
 
       <!-- Les cartes de blog -->
       <div class="blog-cards">
-        <!-- Carte 1 -->
-        <div class="blog-card">
-          <img src="{{asset('images/blog1.png')}}" alt="Médecin souriante" class="blog-image">
-          <div class="blog-content">
-            <h3 class="blog-card-title">L'impact des technologies numériques sur la santé publique</h3>
-            <p class="blog-card-description">Les avancées technologiques jouent un rôle crucial dans la gestion des soins de santé</p>
-            <a href="#" class="blog-read-more">Lire plus</a>
+        @forelse ($blogs as $blog)
+          <div class="blog-card">
+            <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="{{ $blog->titre }}" class="blog-image">
+            <div class="blog-content">
+              <h3 class="blog-card-title">{{ $blog->titre }}</h3>
+              <p class="blog-card-description">{{ Str::limit(strip_tags($blog->contenu), 100) }}</p>
+              <a href="{{ route('blog.detail', $blog->id) }}" class="blog-read-more">Lire plus</a>
+            </div>
           </div>
-        </div>
+        @empty
+          <div class="no-blogs">
+            <p>Aucun blog disponible pour le moment.</p>
+          </div>
+        @endforelse
+      </div>
 
-        <!-- Carte 2 -->
-        <div class="blog-card">
-          <img src="{{asset('images/blog2.png')}}" alt="Échantillons de sang" class="blog-image">
-          <div class="blog-content">
-            <h3 class="blog-card-title">L'impact des technologies numériques sur la santé publique</h3>
-            <p class="blog-card-description">Les avancées technologiques jouent un rôle crucial dans la gestion des soins de santé</p>
-            <a href="#" class="blog-read-more">Lire plus</a>
-          </div>
-        </div>
-
-        <!-- Carte 3 -->
-        <div class="blog-card">
-          <img src="{{asset('images/blog3.png')}}" alt="Équipe médicale" class="blog-image">
-          <div class="blog-content">
-            <h3 class="blog-card-title">L'impact des technologies numériques sur la santé publique</h3>
-            <p class="blog-card-description">Les avancées technologiques jouent un rôle crucial dans la gestion des soins de santé</p>
-            <a href="#" class="blog-read-more">Lire plus</a>
-          </div>
-        </div>
+      <!-- Lien vers tous les blogs -->
+      <div class="text-center mt-4">
+        <a href="{{ route('blogs') }}" class="btn btn-primary">Voir tous les blogs</a>
       </div>
     </div>
   </section>

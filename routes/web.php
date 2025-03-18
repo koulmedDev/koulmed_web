@@ -2,11 +2,12 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [SiteController::class, 'index'])->name('home');
+Route::get('/blogs', [SiteController::class, 'allBlogs'])->name('blogs');
+Route::get('/blog/{id}', [SiteController::class, 'showBlog'])->name('blog.detail');
 
 // Routes Admin Authentication
 Route::get('/admin/login', [AdminController::class, 'showLoginForm'])->name('login.form');
