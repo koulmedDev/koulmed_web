@@ -21,6 +21,23 @@
     <!-- Custom styles for this template-->
     <link href="{{asset('admintemplate/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
+    <style>
+        .sidebar .nav-item.active .nav-link {
+            color: #000000 !important;
+            font-weight: 800 !important;
+            font-size: 1.1rem !important;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar .nav-item.active .nav-link i {
+            color: #000000 !important;
+        }
+
+        .sidebar .nav-item.active .nav-link span {
+            color: #000000 !important;
+        }
+    </style>
+
 </head>
 
 <body id="page-top">
