@@ -279,7 +279,7 @@ h6 {
 .header .cta-btn:hover,
 .header .cta-btn:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, #78BA25, transparent 15%);
 }
 
 /*--------------------------------------------------------------
@@ -333,7 +333,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #78BA25;
   }
 
   .navmenu .dropdown ul {
@@ -564,15 +564,15 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 1px solid white;
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: white;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
+  color: #78BA25;
   border-color: var(--accent-color);
 }
 
@@ -610,13 +610,13 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: white;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: #78BA25;
 }
 
 .footer .footer-contact p {

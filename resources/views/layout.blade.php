@@ -7,7 +7,7 @@
   <title>KOULMED</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-
+    
   <!-- Favicons -->
   <link href="{{asset('Med/assets/img/favicon.png')}}" rel="icon">
   <link href="{{asset('Med/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
