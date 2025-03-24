@@ -7,7 +7,7 @@
   <title>KOULMED</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-    
+
   <!-- Favicons -->
   <link href="{{asset('Med/assets/img/favicon.png')}}" rel="icon">
   <link href="{{asset('Med/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
@@ -57,6 +57,9 @@
 
   <!-- Main JS File -->
   <script src="{{asset('Med/assets/js/main.js')}}"></script>
+  <!-- Ajoutez ces scripts à la fin de votre document avant la fermeture du body -->
+<script src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API_GOOGLE&callback=initMap" async defer></script>
+
 
 </body>
 
