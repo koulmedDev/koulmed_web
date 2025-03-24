@@ -67,6 +67,8 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -762,6 +764,29 @@ h6 {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
+.blogs {
+    background-color: #E4EEED;
+    padding: 60px 0;
+    scroll-margin-top: 120px;
+    overflow: clip;
+}
+.blog-item{
+    background-color: white;
+    border-radius: 17px;
+}
+.blog-img{
+    width: 100%;
+    height: 100%;
+}
+.blog-item a{
+    margin-bottom: 10px;
+}
+.blog-content{
+    margin: 10px;
+}
+.btn-primary{
+    background-color: #78BA25;
+}
 section,
 .section {
   color: var(--default-color);
@@ -817,179 +842,321 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 
-
-
-
-  .hero p {
-    margin-bottom: 30px;
-  }
-
-  .hero .newsletter-form .form-control {
-    height: 50px;
-    border-radius: 5px 0 0 5px;
-    border: none;
-  }
-
-  .hero .newsletter-form .btn {
-    border-radius: 0 5px 5px 0;
-    height: 50px;
-    padding: 0 20px;
-  }
-
-  .hero-img img {
-    max-width: 100%;
-  }
-
-  .logos-container {
-    border-radius: 5px;
-  }
-
-  .logo-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
 /* Styles de base pour la section hero */
 .hero {
     min-height: 500px;
     position: relative;
     margin: 20px;
     background-color: #0055A4;
-    padding: 80px 0 40px;
+    padding: 0;
     border-radius: 12px;
     overflow: hidden;
-  }
+}
 
-  .hero h2 {
+/* Styles pour le carousel */
+#hero-carousel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#hero-carousel .carousel-item {
+    position: relative;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-carousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 85, 164, 0.7);
+}
+
+#hero-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#hero-carousel .carousel-item .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+#hero-carousel h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #fff;
-  }
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease;
+}
 
-  @media (max-width: 768px) {
-    .hero h2 {
-      font-size: 30px;
-    }
-  }
-
-  .hero p {
+#hero-carousel p {
     margin-bottom: 30px;
     color: #fff;
-  }
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease 0.2s both;
+}
 
-  /* Styles pour le formulaire d'inscription */
-  .hero .newsletter-form .form-control {
-    height: 50px;
-    border-radius: 5px 0 0 5px;
-    border: none;
-    padding: 0 15px;
-  }
-
-  .hero .newsletter-form .btn {
-    border-radius: 0 5px 5px 0;
-    height: 50px;
-    padding: 0 20px;
+/* Bouton Read More stylisé */
+.btn-get-started {
+    display: inline-block;
+    padding: 10px 30px;
     background-color: #28a745;
     color: #fff;
-    border: none;
-    transition: background-color 0.3s;
-  }
-
-  .hero .newsletter-form .btn:hover {
-    background-color: #218838;
-  }
-
-  /* Styles pour l'image */
-  .hero-img img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Styles pour la section des logos */
-  .logos-container {
-    background-color: #343a40;
     border-radius: 5px;
-    padding: 15px;
-    margin-top: 30px;
-  }
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid #28a745;
+    animation: fadeInUp 1s ease 0.4s both;
+}
 
-  .logo-item {
+.btn-get-started:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Flèches de navigation */
+#hero-carousel .carousel-control-prev,
+#hero-carousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#hero-carousel:hover .carousel-control-prev,
+#hero-carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+#hero-carousel .carousel-control-prev {
+    top: 550px;
+    left: 20px;
+}
+
+#hero-carousel .carousel-control-next {
+    top: 550px;
+    right: 20px;
+}
+
+#hero-carousel .carousel-control-prev-icon,
+#hero-carousel .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Indicateurs de carousel (points) */
+#hero-carousel .carousel-indicators {
+    bottom: 2px;
+}
+
+#hero-carousel .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#hero-carousel .carousel-indicators li.active {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+}
+/* Styles pour le formulaire d'inscription dans le carousel */
+#hero-carousel .newsletter-form {
+    max-width: 450px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+#hero-carousel .newsletter-form .input-group {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #6c757d;
-  }
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
 
-  /* Media queries pour la responsivité */
-  @media (max-width: 1200px) {
-    .hero .container {
-      padding-left: 50px;
-      padding-right: 50px;
+#hero-carousel .newsletter-form .form-control {
+    flex: 1;
+    height: 46px;
+    border: none;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    color: #495057;
+    border-radius: 5px 0 0 5px;
+}
+
+#hero-carousel .newsletter-form .form-control::placeholder {
+    color: #adb5bd;
+}
+
+#hero-carousel .newsletter-form .btn-subscribe {
+    height: 46px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+#hero-carousel .newsletter-form .btn-subscribe:hover {
+    background-color: #4cae4c;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-  }
-
-  @media (max-width: 991px) {
-    .hero {
-      text-align: center;
-      padding: 60px 0 30px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    .hero-img {
-      margin-top: 40px;
-    }
-
-    .newsletter-form {
-      max-width: 80%;
-      margin: 0 auto;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .hero {
-      padding: 40px 0 20px;
-    }
-
-    .newsletter-form {
-      max-width: 100%;
-    }
-
-    .logos-container {
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .logo-item {
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-  }
-
-  @media (max-width: 580px) {
-    .hero {
-      min-height: auto;
-    }
-
-    .hero .newsletter-form .input-group {
-      flex-direction: column;
+/* Media Queries pour la responsivité */
+@media (max-width: 1200px) {
+    #hero-carousel h2 {
+        font-size: 2.2rem;
     }
 
-    .hero .newsletter-form .form-control {
-      border-radius: 5px;
-      margin-bottom: 10px;
+    #hero-carousel p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero, #hero-carousel .carousel-item {
+        min-height: 500px;
+        height: 500px;
     }
 
-    .hero .newsletter-form .btn {
-      border-radius: 5px;
-      width: 100%;
+    #hero-carousel h2 {
+        font-size: 2rem;
     }
 
-    .logos-container {
-      padding: 10px 5px;
+    #hero-carousel p {
+        font-size: 0.95rem;
     }
-  }
+
+    .btn-get-started {
+        padding: 8px 25px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero, #hero-carousel .carousel-item {
+        min-height: 450px;
+        height: 450px;
+    }
+
+    #hero-carousel h2 {
+        font-size: 1.8rem;
+    }
+
+    #hero-carousel p {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+
+    .btn-get-started {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    #hero-carousel .newsletter-form {
+        max-width: 90%;
+    }
+
+    #hero-carousel .newsletter-form .btn-subscribe {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 580px) {
+    .hero, #hero-carousel .carousel-item {
+        min-height: 400px;
+        height: 400px;
+    }
+
+    #hero-carousel h2 {
+        font-size: 1.5rem;
+    }
+
+    #hero-carousel p {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+
+    .btn-get-started {
+        padding: 7px 18px;
+        font-size: 0.85rem;
+    }
+
+    #hero-carousel .carousel-control-prev,
+    #hero-carousel .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    #hero-carousel .newsletter-form .input-group {
+        flex-direction: row;
+    }
+
+    #hero-carousel .newsletter-form .form-control {
+        border-radius: 5px 0 0 5px;
+        margin-bottom: 0;
+        width: 60%;
+    }
+
+    #hero-carousel .newsletter-form .btn-subscribe {
+        border-radius: 0 5px 5px 0;
+        width: 40%;
+        font-size: 0.8rem;
+        padding: 0 5px;
+    }
+    #hero-carousel .carousel-indicators {
+        list-style: none;
+    }
+
+    #hero-carousel .carousel-indicators li::before,
+    #hero-carousel .carousel-indicators li::after {
+        display: none; /* Cache tout contenu généré avant/après */
+    }
+}
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/

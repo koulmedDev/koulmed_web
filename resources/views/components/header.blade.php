@@ -13,8 +13,8 @@
           <ul>
             <li><a href="#hero" class="active">Accueil</a></li>
 
-            <li><a href="#services">Nos services</a></li>
-            <li><a href="#about">A propos de nous</a></li>
+            <li><a href="#featured-services">Nos services</a></li>
+            <li><a href="#features">A propos de nous</a></li>
             {{-- <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -39,7 +39,7 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn" href="index.html#appointment">Prendre un rendez-vous</a>
+        <a class="cta-btn" href="#appointment">Prendre un rendez-vous</a>
 
       </div>
 

@@ -2,8 +2,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Testimonials</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <h2 style="color: #0055A4">Ce que disent nos Patients</h2>
+      <p style="color: #0055A4">Découvrez ce que nos Patients pensent de nos services et comment nous avons contribué à améliorer leur expérience de soins</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -40,12 +40,12 @@
             <div class="testimonial-item" "="">
           <p>
             <i class=" bi bi-quote quote-icon-left"></i>
-              <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+              <span>Un service exceptionnel qui m’a permis de recevoir des soins sans quitter ma maison. </span>
               <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
+              <img src="{{asset('images/avatar1.png')}}" class="testimonial-img" alt="">
+              <h3>Amah folly</h3>
+              <h4>Cadre dans une entreprise de marketing</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -53,12 +53,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                <span>Grâce à la consultation en ligne, j’ai pu discuter de mes symptômes avec un infirmier sans avoir à me déplacer.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
+              <img src="{{asset('images/avatar2.png')}}" class="testimonial-img" alt="">
+              <h3>Matthieu Dosse</h3>
+              <h4>Couturier</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -66,12 +66,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                <span>La prise de sang à domicile a été rapide et très pratique. Les résultats ont été envoyés en temps voulu</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
+              <img src="{{asset('images/avatar3.png')}}" class="testimonial-img" alt="">
+              <h3>Sebastien</h3>
+              <h4>Vendeur</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -79,12 +79,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                <span>Un service exceptionnel qui m’a permis de recevoir des soins sans quitter ma maison. </span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
+              <img src="{{asset('images/avatar1.png')}}" class="testimonial-img" alt="">
+              <h3>Amah folly</h3>
+              <h4>Cadre dans une entreprise de marketing</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -92,12 +92,25 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                <span>Grâce à la consultation en ligne, j’ai pu discuter de mes symptômes avec un infirmier sans avoir à me déplacer.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
+              <img src="{{asset('images/avatar2.png')}}" class="testimonial-img" alt="">
+              <h3>Matthieu Dosse</h3>
+              <h4>Couturier</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>La prise de sang à domicile a été rapide et très pratique. Les résultats ont été envoyés en temps voulu</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <img src="{{asset('images/avatar3.png')}}" class="testimonial-img" alt="">
+              <h3>Sebastien</h3>
+              <h4>Vendeur </h4>
             </div>
           </div><!-- End testimonial item -->
 

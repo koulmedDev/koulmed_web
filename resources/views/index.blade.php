@@ -13,7 +13,7 @@
   <!-- /Featured Services Section -->
 
   <!-- Call To Action Section -->
-  <section id="call-to-action" class="call-to-action section accent-background">
+  {{-- <section id="call-to-action" class="call-to-action section accent-background">
 
     <div class="container">
       <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -27,7 +27,8 @@
       </div>
     </div>
 
-  </section><!-- /Call To Action Section -->
+  </section> --}}
+  <!-- /Call To Action Section -->
 
   <!-- About Section -->
   @include('components.about')
@@ -35,7 +36,7 @@
 
 
   <!-- Appointment Section -->
-   {{-- @include('components.giveavis') --}}
+   @include('components.rdv')
   <!-- /Appointment Section -->
 
   <!-- Testimonials Section -->

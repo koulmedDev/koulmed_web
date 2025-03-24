@@ -2,13 +2,13 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>MAKE AN APPOINTMENT</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <h2>Prendre un rendez-vous maintenant</h2>
+      <p>Si vous souhaitez prendre un rendez-vous, remplissez vos informations dans les champs ci-dessous.</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+      <form action="" method="post" role="form" class="php-email-form">
         <div class="row">
           <div class="col-md-4 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">

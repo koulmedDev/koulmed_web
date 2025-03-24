@@ -3,7 +3,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="#" class="logo d-flex align-items-center">
+          <a href="#hero" class="logo d-flex align-items-center">
             <img src="{{asset('images/logo-blanc.png')}}" alt="Koulmed Logo" class="logo" height="500px">
           </a>
           {{-- <div class="footer-contact pt-3">
@@ -23,20 +23,20 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4 style="color: white">Menus</h4>
           <ul>
-            <li><a href="#">Nos services</a></li>
-            <li><a href="#">A propos de nous</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#featured-services">Nos services</a></li>
+            <li><a href="#features">A propos de nous</a></li>
+            <li><a href="#blogs">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
             {{-- <li><a href="#">Privacy policy</a></li> --}}
           </ul>
         </div>
 
  <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Liens utiles</h4>
+          <h4 style="color: white">Liens utiles</h4>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Avis des clients</a></li>
-            <li><a href="#">Apportez votre avis</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#testimonials">Avis des clients</a></li>
+            {{-- <li><a href="#">Apportez votre avis</a></li> --}}
             {{-- <li><a href="#">Product Management</a></li>
             <li><a href="#">Graphic Design</a></li> --}}
           </ul>
