@@ -291,16 +291,15 @@
       // Encodage du message pour l'URL
       const encodedMessage = encodeURIComponent(whatsappMessage);
 
-      // Numéro WhatsApp (format international sans le +)
       const whatsappNumber = "22893617132";
 
-      // Créer le lien WhatsApp
+      //  lien WhatsApp
       const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
       // Afficher le message de chargement
       document.querySelector('.loading').style.display = 'block';
 
-      // Simuler un délai pour l'envoi (vous pouvez remplacer cela par une vraie requête AJAX si nécessaire)
+      // Simuler un délai pour l'envoi
       setTimeout(function() {
         // Masquer le message de chargement
         document.querySelector('.loading').style.display = 'none';

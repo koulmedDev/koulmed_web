@@ -8,8 +8,7 @@
         <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
           <div class="service-item position-relative">
             <div class="icon"><i class="fas fa-house-medical"></i></div>
-            <h4><a href="" class="stretched-link">Consultations et soins
-                médicaux à domicile</a></h4>
+            <h4><a href="#appointment" class="stretched-link">Consultations et soins médicaux à domicile</a></h4>
             <p>Nos professionnels de santé se déplacent chez vous pour des soins personnalisés et de qualité</p>
           </div>
         </div>
