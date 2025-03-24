@@ -3,6 +3,7 @@
     <div class="container">
         <h2 style="color: #78BA25; font-size: 30px">Consultation avec nos meilleurs infirmiers</h2>
       <div class="row justify-content-around gy-4">
+        {{-- <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{{asset('images/medecin-souriant.jpg')}}" alt="Medecin" height="50px"></div> --}}
         <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <h3>Ce que vous devez savoir sur KOULMED</h3>
             {{-- <p></p> --}}
@@ -50,7 +51,7 @@
             <!-- End Icon Box -->
 
           </div>
-        <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{{asset('images/a-propos.png')}}" alt=""></div>
+
 
 
       </div>

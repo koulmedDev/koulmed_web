@@ -198,124 +198,59 @@
 })();
 
 
-  let map;
-  let marker;
-  let userLocation = {};
-
-  function initMap() {
-    // Initialiser la carte avec une position par défaut (Lomé)
-    const defaultLocation = { lat: 6.1319, lng: 1.2228 };
-    map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 15,
-      center: defaultLocation,
-    });
-
-    marker = new google.maps.Marker({
-      position: defaultLocation,
-      map: map,
-      draggable: true
-    });
-
-    // Mettre à jour les coordonnées quand le marqueur est déplacé
-    google.maps.event.addListener(marker, 'dragend', function() {
-      const position = marker.getPosition();
-      userLocation = {
-        lat: position.lat(),
-        lng: position.lng()
-      };
-      document.getElementById('location').value = `${userLocation.lat}, ${userLocation.lng}`;
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const locationBtn = document.getElementById('getLocation');
-    const mapDiv = document.getElementById('map');
-    const locationInput = document.getElementById('location');
+// script d'envoi des informations de prise de rendez vous
+document.addEventListener('DOMContentLoaded', function() {
     const appointmentForm = document.getElementById('appointmentForm');
 
-    locationBtn.addEventListener('click', function() {
-      if (mapDiv.style.height === '0px' || mapDiv.style.height === '') {
-        mapDiv.style.height = '300px';
-
-        // Obtenir la position actuelle
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(
-            function(position) {
-              userLocation = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-              };
-
-              // Mettre à jour le centre de la carte et la position du marqueur
-              const pos = new google.maps.LatLng(userLocation.lat, userLocation.lng);
-              map.setCenter(pos);
-              marker.setPosition(pos);
-
-              // Mettre à jour l'input
-              locationInput.value = `${userLocation.lat}, ${userLocation.lng}`;
-            },
-            function(error) {
-              console.error("Erreur de géolocalisation:", error);
-              alert("Impossible d'obtenir votre position. Veuillez vérifier vos paramètres de localisation.");
-            }
-          );
-        } else {
-          alert("La géolocalisation n'est pas prise en charge par votre navigateur.");
-        }
-      } else {
-        mapDiv.style.height = '0px';
-      }
-    });
-
-    // Gestionnaire d'événement pour l'envoi du formulaire
     appointmentForm.addEventListener('submit', function(e) {
-      e.preventDefault();
+        e.preventDefault();
 
-      // Collecter les données du formulaire
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-      const location = document.getElementById('location').value;
-      const message = document.getElementById('message').value;
+        // Collecter les données du formulaire
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const service = document.getElementById('service').value;
+        const location = document.getElementById('location').value;
+        const message = document.getElementById('message').value;
 
-      // Construire le message WhatsApp
-      const whatsappMessage = `
+        // Construire le message WhatsApp
+        const whatsappMessage = `
 *Nouveau rendez-vous médical*
 *Nom*: ${name}
 *Email*: ${email}
 *Téléphone*: ${phone}
+*Service*: ${service === 'consultation' ? 'Consultations et soins médicaux à domicile' : 'Prise de sang à domicile pour analyses médicales'}
 *Localisation*: ${location}
 *Message*: ${message}
-      `;
+        `;
 
-      // Encodage du message pour l'URL
-      const encodedMessage = encodeURIComponent(whatsappMessage);
+        // Encodage du message pour l'URL
+        const encodedMessage = encodeURIComponent(whatsappMessage);
 
-      const whatsappNumber = "22893617132";
+        const whatsappNumber = "22891259103";
+     
+        // lien WhatsApp
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
-      //  lien WhatsApp
-      const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+        // Afficher le message de chargement
+        document.querySelector('.loading').style.display = 'block';
 
-      // Afficher le message de chargement
-      document.querySelector('.loading').style.display = 'block';
-
-      // Simuler un délai pour l'envoi
-      setTimeout(function() {
-        // Masquer le message de chargement
-        document.querySelector('.loading').style.display = 'none';
-
-        // Afficher le message de succès
-        document.querySelector('.sent-message').style.display = 'block';
-
-        // Rediriger vers WhatsApp
-        window.open(whatsappLink, '_blank');
-
-        // Réinitialiser le formulaire après un court délai
+        // Simuler un délai pour l'envoi
         setTimeout(function() {
-          appointmentForm.reset();
-          document.querySelector('.sent-message').style.display = 'none';
-          mapDiv.style.height = '0px';
-        }, 3000);
-      }, 1500);
+            // Masquer le message de chargement
+            document.querySelector('.loading').style.display = 'none';
+
+            // Afficher le message de succès
+            document.querySelector('.sent-message').style.display = 'block';
+
+            // Rediriger vers WhatsApp
+            window.open(whatsappLink, '_blank');
+
+            // Réinitialiser le formulaire après un court délai
+            setTimeout(function() {
+                appointmentForm.reset();
+                document.querySelector('.sent-message').style.display = 'none';
+            }, 3000);
+        }, 1500);
     });
-  });
+});
