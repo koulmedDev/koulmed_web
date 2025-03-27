@@ -58,7 +58,7 @@
   <!-- Main JS File -->
   <script src="{{asset('Med/assets/js/main.js')}}"></script>
   <!-- Ajoutez ces scripts à la fin de votre document avant la fermeture du body -->
-<script src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API_GOOGLE&callback=initMap" async defer></script>
+{{-- <script src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API_GOOGLE&callback=initMap" async defer></script> --}}
 
 
 </body>

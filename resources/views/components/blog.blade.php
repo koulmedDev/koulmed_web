@@ -39,6 +39,7 @@
                 <img src="{{ asset('storage/blogs/' . $blog->image) }}" class="blog-img" alt="{{ $blog->titre }}">
                 <div class="blog-content">
                   <h3>{{ $blog->titre }}</h3>
+                  <p class="text-muted"><i class="far fa-calendar-alt"></i> {{ $blog->created_at->format('d/m/Y H:i') }}</p>
                   <p>{{ \Illuminate\Support\Str::limit(strip_tags($blog->contenu), 100) }}</p>
                   <a href="{{ route('blog.detail', $blog->id) }}" class="btn btn-primary">Lire plus</a>
                 </div>

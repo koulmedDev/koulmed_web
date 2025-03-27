@@ -67,7 +67,7 @@
           <div class="container">
             <h2>Prise de Sang à Domicile</h2>
             <p>Bénéficiez d'analyses médicales sans vous déplacer. Nos professionnels qualifiés se rendent à votre domicile pour effectuer vos prélèvements sanguins dans le confort de votre foyer. Service rapide, sécurisé et adapté à tous, particulièrement aux personnes à mobilité réduite et aux personnes âgées.</p>
-            <a href="#featured-services" class="btn-get-started">Commander</a>
+            <a href="#appointment" class="btn-get-started">Commander</a>
           </div>
         </div><!-- End Carousel Item -->
 

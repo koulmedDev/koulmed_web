@@ -38,7 +38,7 @@
                                         <td>{{ $pharmacie->phone }}</td>
                                         <td>{{ $pharmacie->address }}</td>
                                         <td>
-                                            <a href="{{ route('pharmacie.show', $pharmacie->id) }}" class="btn btn-info btn-sm">Voir</a>
+                                            {{-- <a href="{{ route('pharmacie.show', $pharmacie->id) }}" class="btn btn-info btn-sm">Voir</a> --}}
                                             <a href="{{ route('pharmacie.edit', $pharmacie->id) }}" class="btn btn-warning btn-sm">Modifier</a>
                                             <form action="{{ route('pharmacie.delete', $pharmacie->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Voulez-vous vraiment supprimer cette pharmacie ?');">
                                                 @csrf

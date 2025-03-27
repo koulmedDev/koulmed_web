@@ -66,4 +66,10 @@ class PharmacieController extends Controller
          return redirect()->route('pharmacie.index')->with('success', 'Pharmacie supprimée avec succès');
      }
 
+
+     public function onDutyPharmacies()
+{
+    $pharmacies = Pharmacie::all();
+    return view('pharmacie', compact('pharmacies'));
+}
 }

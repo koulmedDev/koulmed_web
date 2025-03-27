@@ -25,6 +25,8 @@ class SiteController extends Controller
      public function showBlog($id)
      {
          $blog = Blog::findOrFail($id);
-         return view('blogdetail', compact('blog'));
+         return view('blogdetails', compact('blog'));
      }
+
+
 }

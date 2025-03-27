@@ -27,7 +27,7 @@
         <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
           <div class="service-item position-relative">
             <div class="icon"><i class="fas fa-pills icon"></i></div>
-            <h4><a href="" class="stretched-link">Accès gratuit aux
+            <h4><a href="{{ route('pharmacies.on_duty') }}" class="stretched-link">Accès gratuit aux
                 pharmacies de garde</a></h4>
             <p>Bénéficiez d’un accès gratuit aux pharmacies de garde grâce à notre réseau et notre communauté</p>
           </div>

@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [SiteController::class, 'index'])->name('home');
 Route::get('/blogs', [SiteController::class, 'allBlogs'])->name('blogs');
 Route::get('/blog/{id}', [SiteController::class, 'showBlog'])->name('blog.detail');
+// Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.show');
+
 
 // Routes Admin Authentication
 Route::get('/admin/login', [AdminController::class, 'showLoginForm'])->name('login.form');
@@ -42,3 +44,4 @@ Route::middleware(['auth'])->group(function () {
 
 //pour l'envoi de mail avec smtp
 Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact.send');
+Route::get('/pharmacies-de-garde', [PharmacieController::class, 'onDutyPharmacies'])->name('pharmacies.on_duty');
