@@ -34,15 +34,26 @@
     <li class="nav-item {{ request()->routeIs('blog.all') ? 'active' : '' }}">
         <a class="nav-link" href="{{route('blog.all')}}">
             <i class="fas fa-fw fa-eye"></i>
-            <span>Voir tous les blog</span></a>
+            <span>Voir tous les blogs</span></a>
     </li>
 
     <li class="nav-item {{ request()->routeIs('blog.historique') ? 'active' : '' }}">
         <a class="nav-link" href="{{route('blog.historique')}}">
             <i class="fas fa-fw fa-book"></i>
-            <span>Historique des blog</span></a>
+            <span>Historique des blogs</span></a>
     </li>
 
+    <li class="nav-item {{ request()->routeIs('pharmacie.form') ? 'active' : '' }}">
+        <a class="nav-link" href="{{route('pharmacie.form')}}">
+            <i class="fas fa-fw fa-plus"></i>
+            <span>Ajouter les pharmacies de garde</span></a>
+    </li>
+
+    <li class="nav-item {{ request()->routeIs('pharmacie.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{route('pharmacie.index')}}">
+            <i class="fas fa-fw fa-eye"></i>
+            <span>Voir toutes pharmacies</span></a>
+    </li>
     <!-- Divider -->
     <hr class="sidebar-divider">
 
