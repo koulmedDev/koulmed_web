@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [SiteController::class, 'index'])->name('home');
@@ -28,3 +29,7 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/admin/blog/update/{id}', [BlogController::class, 'update'])->name('blog.update');
     Route::delete('/admin/blog/delete/{id}', [BlogController::class, 'destroy'])->name('blog.delete');
 });
+
+
+//pour l'envoi de mail avec smtp
+Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact.send');
