@@ -36,6 +36,7 @@
           <ul>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#testimonials">Avis des clients</a></li>
+            <li><a href="#appointment">Prendre un rendez-vous</a></li>
             {{-- <li><a href="#">Apportez votre avis</a></li> --}}
             {{-- <li><a href="#">Product Management</a></li>
             <li><a href="#">Graphic Design</a></li> --}}

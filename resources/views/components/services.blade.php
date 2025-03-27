@@ -17,7 +17,7 @@
         <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon"><i class="fas fa-syringe"></i></div>
-              <h4><a href="" class="stretched-link">Prise de sang à domicile
+              <h4><a href="#appointment" class="stretched-link">Prise de sang à domicile
                 pour analyses médicales</a></h4>
               <p>Profitez de notre service de prise de sang à domicile, effectué par nos infirmiers qualifiés</p>
             </div>

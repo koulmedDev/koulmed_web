@@ -1,7 +1,8 @@
 <section id="appointment" class="appointment section light-background">
     <div class="container section-title" data-aos="fade-up">
         <h2>Prendre un rendez-vous maintenant</h2>
-        <p>Si vous souhaitez prendre un rendez-vous, remplissez vos informations dans les champs ci-dessous.</p>
+        <p>Si vous souhaitez prendre un rendez-vous, que ce soit une consultation à domicile ou prise de sang à domicile
+            pour analyses médicales, remplissez vos informations dans les champs ci-dessous.</p>
     </div>
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
