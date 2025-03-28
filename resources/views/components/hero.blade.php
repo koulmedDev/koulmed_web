@@ -1,10 +1,16 @@
 {{-- <section id="hero" class="hero section">
     <div class="container">
       <div class="row">
-
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h2 class="text-white">Koulmed, Mon Hôpital à portée de mains</h2>
+          <h2 class="text-white">Koulmed, Votre Hôpital à portée de mains</h2>
           <p class="text-white">Des soins médicaux à domicile, simplement et rapidement à Lomé</p>
+
+          <div class="newsletter-form mt-4">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Entrez votre mail">
+              <button class="btn btn-success" type="button">S'abonner à Koulmed</button>
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-6">
@@ -46,19 +52,14 @@
               <h2>Koulmed, Mon Hôpital à portée de mains</h2>
               <p>Des soins médicaux à domicile, simplement et rapidement à Lomé</p>
 
-<!-- ------------------------------------------------------------------ -->
-
-<!-- J'ai commenté le code d'abonnment à la newsletter pour le moment car il n'est pas encore fonctionnel -->
-<!-- ------------------------------------------------------------------ -->
               <!-- Nouveau formulaire d'inscription remplaçant le bouton Read More -->
               <!-- <div class="newsletter-form">
                 <div class="input-group">
                   <input type="email" class="form-control" placeholder="Entrez votre mail" aria-label="Adresse email">
                   <button class="btn btn-subscribe" type="button">S'abonner à Koulmed</button>
                 </div>
-              </div>
-            </div> -->
-<!-- ------------------------------------------------------------------ -->
+              </div> -->
+            </div>
           </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
