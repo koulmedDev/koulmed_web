@@ -15,7 +15,7 @@
 
             <li><a href="#featured-services">Nos services</a></li>
             <li><a href="#features">A propos de nous</a></li>
-            <li><a href="#pharmacies-on-duty">Pharmacie de garde</a></li>
+            <li><a href="/pharmacies-on-duty">Pharmacie de garde</a></li>
             {{-- <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
