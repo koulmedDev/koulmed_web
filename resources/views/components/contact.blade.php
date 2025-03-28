@@ -29,7 +29,7 @@
               <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone"></i>
                 <h3>Appeler</h3>
-                <p>+22896633254</p>
+                <p>+22891259103</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -37,7 +37,7 @@
               <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope"></i>
                 <h3>Email</h3>
-                <p>info@example.com</p>
+                <p>koulmedservice@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -45,6 +45,10 @@
         </div>
 
         <div class="col-lg-6">
+          <div class="alert alert-warning d-flex align-items-center" role="alert">
+              <i class="bi bi-exclamation-triangle-fill me-2"></i>
+              Service de messagerie bientôt disponible, veuillez pour l’instant nous contacter via WhatsApp pour vos avis ou recommandations.
+          </div>
           <form action="{{ route('contact.send') }}" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
             @csrf
             <div class="row gy-4">

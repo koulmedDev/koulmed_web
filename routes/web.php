@@ -45,3 +45,6 @@ Route::middleware(['auth'])->group(function () {
 //pour l'envoi de mail avec smtp
 Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact.send');
 Route::get('/pharmacies-de-garde', [PharmacieController::class, 'onDutyPharmacies'])->name('pharmacies.on_duty');
+Route::get('/pharmacies-on-duty', function () {
+    return view('pharmacies'); // Assurez-vous que le fichier existe dans resources/views/pharmacies.blade.php
+})->name('pharmacies');
