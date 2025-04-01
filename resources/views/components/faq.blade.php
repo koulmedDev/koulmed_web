@@ -3,7 +3,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>FAQ</h2>
-      <p>Vous trouverez ici quelques informations concernant la plateforme</p>
+      <p>Tout ce que vous devez savoir sur notre solution</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -21,20 +21,23 @@
                     • Consultations médicales pour maladies courantes (paludisme, grippe, fièvre, infections
                     bénignes…)<br>
                     • Pansements et soins des plaies<br>
-                    • Prises de sang à domicile pour analyses biomédicales<br>
+                    • Prises de sang à domicile pour des analyses biomédicales<br>
                     • Accompagnement des personnes âgées à domicile<br>
                     • Suivi des patients atteints de maladies chroniques et d’autres situations de santé ne
                     nécessitant pas une hospitalisation.<br>
+                    • Livraison de Médicaments à domicile pour des patients disposant déja d'ordonnace pour leur produit<br>
                     Nous ne prenons pas en charge les urgences vitales ni les maladies graves nécessitant une
-                    hospitalisation </p>
+                    hospitalisation.<br>
+                    Nos service ne couvrent que la ville de Lomé et ses environ pour le moment.
+                  </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
             </div><!-- End Faq item-->
 
             <div class="faq-item">
-              <h3>Comment prendre un rendez-vous pour une consultation en ligne ?</h3>
+              <h3>Comment prendre un rendez-vous pour une consultation à domicile ?</h3>
               <div class="faq-content">
-                <p>• Cliquez sur le bouton "Prendre rendez-vous" sur notre site web. <br>
+                <p>• Cliquez sur le bouton "Prendre rendez-vous" plus haut sur ce site web. <br>
                     • Vous serez automatiquement redirigé vers notre WhatsApp. <br>
                     • Un professionnel de santé vous répondra pour organiser la consultation ou l’intervention
                     à domicile.</p>
@@ -47,16 +50,16 @@
               <div class="faq-content">
                 <p>
                     Nos professionnels de santé sont des experts reconnus dans leur domaine, avec plusieurs années
-d’expérience et diplômés de formations officielles reconnues par l’État togolais.
-• Nos médecins sont tous inscrits à l’Ordre National des Médecins du Togo (ONMT).
-• Nos infirmiers sont membres de l’Association Nationale des Infirmiers et
-Infirmières du Togo (ANIIT).
-• Nos kinésithérapeutes, Sage-femmes et pharmaciens sont également inscrits auprès
-de leurs ordres professionnels respectifs.
-Nous sélectionnons rigoureusement nos équipes pour garantir compétence, professionnalisme
-et bienveillance. Nos intervenants sont non seulement hautement qualifiés, mais aussi
-accueillants, empathiques et veillent à instaurer un cadre rassurant et convivial pour chaque
-patient.
+                    d’expérience et diplômés de formations officielles reconnues par l’État togolais.<br>
+                    • Nos médecins sont tous inscrits à l’Ordre National des Médecins du Togo (ONMT).<br>
+                    • Nos infirmiers sont membres de l’Association Nationale des Infirmiers et
+                    Infirmières du Togo (ANIIT).<br>
+                    • Nos kinésithérapeutes, Sage-femmes et pharmaciens sont également inscrits auprès
+                    de leurs ordres professionnels respectifs.<br>
+                    Nous sélectionnons rigoureusement nos équipes pour garantir compétence, professionnalisme
+                    et bienveillance. Nos intervenants sont non seulement hautement qualifiés, mais aussi
+                    accueillants, empathiques et veillent à instaurer un cadre rassurant et convivial pour chaque
+                    patient.<br>
                 </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>

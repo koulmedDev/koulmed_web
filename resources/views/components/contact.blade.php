@@ -29,7 +29,7 @@
               <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone"></i>
                 <h3>Appeler</h3>
-                <p>+22891259103</p>
+                <p>+228 91259103</p>
               </div>
             </div><!-- End Info Item -->
 

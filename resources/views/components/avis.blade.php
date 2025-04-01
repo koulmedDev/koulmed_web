@@ -43,9 +43,10 @@
               <span>Un service exceptionnel qui m’a permis de recevoir des soins sans quitter ma maison. </span>
               <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="{{asset('images/avatar1.png')}}" class="testimonial-img" alt="">
-              <h3>Amah folly</h3>
-              <h4>Cadre dans une entreprise de marketing</h4>
+              <!-- photo fictive commentée -->
+              <!-- <img src="{{asset('images/avatar1.png')}}" class="testimonial-img" alt=""> -->
+              <h3>Sara DOVI</h3>
+              <h4>Cadre merketing dans une entreprise</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -56,9 +57,10 @@
                 <span>Grâce à la consultation en ligne, j’ai pu discuter de mes symptômes avec un infirmier sans avoir à me déplacer.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="{{asset('images/avatar2.png')}}" class="testimonial-img" alt="">
-              <h3>Matthieu Dosse</h3>
-              <h4>Couturier</h4>
+              <!-- photo fictive commentée -->
+              <!-- <img src="{{asset('images/avatar2.png')}}" class="testimonial-img" alt=""> -->
+              <h3>Espoir EKLU</h3>
+              <h4>Chef d'entreprise</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -69,9 +71,10 @@
                 <span>La prise de sang à domicile a été rapide et très pratique. Les résultats ont été envoyés en temps voulu</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="{{asset('images/avatar3.png')}}" class="testimonial-img" alt="">
-              <h3>Sebastien</h3>
-              <h4>Vendeur</h4>
+              <!-- photo fictive commentée -->
+              <!-- <img src="{{asset('images/avatar3.png')}}" class="testimonial-img" alt=""> -->
+              <h3>Koffi HIATOR</h3>
+              <h4>Enseignant</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -79,12 +82,13 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Un service exceptionnel qui m’a permis de recevoir des soins sans quitter ma maison. </span>
+                <span>Un service exceptionnel qui m’a permis de d'offrir des soins à des membres mon équipe sans qu'il n'aient à quitter le boulot. </span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="{{asset('images/avatar1.png')}}" class="testimonial-img" alt="">
-              <h3>Amah folly</h3>
-              <h4>Cadre dans une entreprise de marketing</h4>
+              <!-- photo fictive commentée -->
+              <!-- <img src="{{asset('images/avatar1.png')}}" class="testimonial-img" alt=""> -->
+              <h3>Dorinel OKNDZO</h3>
+              <h4>Coach en Art Oratoire et chef d'entreprise</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -92,12 +96,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Grâce à la consultation en ligne, j’ai pu discuter de mes symptômes avec un infirmier sans avoir à me déplacer.</span>
+                <span>Grâce à la consultation en ligne, j’ai pu avoir une ordonnace pour mes symptômes auprès d'un Médecin sans avoir eu à me déplacer.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="{{asset('images/avatar2.png')}}" class="testimonial-img" alt="">
-              <h3>Matthieu Dosse</h3>
-              <h4>Couturier</h4>
+              <!-- <img src="{{asset('images/avatar2.png')}}" class="testimonial-img" alt=""> -->
+              <h3>Eli Dorcas DOMLAN</h3>
+              <h4>Ingénieure Data Scientist</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -105,12 +109,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>La prise de sang à domicile a été rapide et très pratique. Les résultats ont été envoyés en temps voulu</span>
+                <span>Grâce à Koulmed, ma grand-mère a pu bénéficier d'une prise en charge à domicile adaptée et de qualité.<br> Les soins étaient professionnels et personnalisés, ce qui a facilité son quotidien et apporté à notre famille une grande sérénité. <br>Une solution fiable et humaine que je recommande vivement.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="{{asset('images/avatar3.png')}}" class="testimonial-img" alt="">
-              <h3>Sebastien</h3>
-              <h4>Vendeur </h4>
+              <!-- <img src="{{asset('images/avatar3.png')}}" class="testimonial-img" alt=""> -->
+              <h3>Merveille</h3>
+              <h4>Juriste</h4>
             </div>
           </div><!-- End testimonial item -->
 

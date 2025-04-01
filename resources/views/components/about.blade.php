@@ -32,7 +32,8 @@
 
                 <div class="about-decouv">
                     <a class="dec-btn" href="#faq">Decouvrir plus</a>
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+                    <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a> -->
+                    <!-- Bouton de vidéo commenter pour le moment en attendant la vidéo qui sera tournée au studio -->
                 </div>
             </div>
 
