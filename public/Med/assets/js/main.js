@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const encodedMessage = encodeURIComponent(whatsappMessage);
 
         const whatsappNumber = "22891259103";
-     
+
         // lien WhatsApp
         const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
@@ -254,3 +254,53 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1500);
     });
 });
+
+
+// script pour l'api de geolocalisation
+let map;
+let marker;
+
+    document.getElementById('location').addEventListener('click', function () {
+        // Affiche la carte
+        document.getElementById('map').style.display = 'block';
+        document.getElementById('confirmLocation').style.display = 'inline-block';
+
+        // Obtenir la géolocalisation
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                const userLocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+                // Afficher la carte centrée sur l'utilisateur
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: userLocation,
+                    zoom: 16
+                });
+
+                // Placer un marqueur
+                marker = new google.maps.Marker({
+                    position: userLocation,
+                    map: map,
+                    draggable: true
+                });
+            }, function (error) {
+                alert("Erreur de géolocalisation : " + error.message);
+            });
+        } else {
+            alert("Votre navigateur ne supporte pas la géolocalisation.");
+        }
+    });
+
+    document.getElementById('confirmLocation').addEventListener('click', function () {
+        const lat = marker.getPosition().lat();
+        const lng = marker.getPosition().lng();
+        const mapsUrl = `https://www.google.com/maps?q=${lat},${lng}`;
+
+        document.getElementById('location').value = mapsUrl;
+
+        // Cacher la carte et le bouton
+        document.getElementById('map').style.display = 'none';
+        document.getElementById('confirmLocation').style.display = 'none';
+    });

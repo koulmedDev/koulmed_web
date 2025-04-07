@@ -91,7 +91,7 @@
               <h4>Coach en Art Oratoire et chef d'entreprise</h4>
             </div>
           </div><!-- End testimonial item -->
-
+{{--
           <div class="swiper-slide">
             <div class="testimonial-item">
               <p>
@@ -103,7 +103,8 @@
               <h3>Eli Dorcas DOMLAN</h3>
               <h4>Ingénieure Data Scientist</h4>
             </div>
-          </div><!-- End testimonial item -->
+          </div> --}}
+          <!-- End testimonial item -->
 
           <div class="swiper-slide">
             <div class="testimonial-item">

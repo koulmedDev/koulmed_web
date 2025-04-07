@@ -25,10 +25,10 @@
                     • Accompagnement des personnes âgées à domicile<br>
                     • Suivi des patients atteints de maladies chroniques et d’autres situations de santé ne
                     nécessitant pas une hospitalisation.<br>
-                    • Livraison de Médicaments à domicile pour des patients disposant déja d'ordonnace pour leur produit<br>
+                    • Livraison de Médicaments à domicile pour des patients disposant déjà d'une ordonnace pour leur produit<br>
                     Nous ne prenons pas en charge les urgences vitales ni les maladies graves nécessitant une
                     hospitalisation.<br>
-                    Nos service ne couvrent que la ville de Lomé et ses environ pour le moment.
+                    Nos services ne couvrent que la ville de Lomé et ses environs pour le moment.
                   </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
@@ -46,7 +46,7 @@
             </div><!-- End Faq item-->
 
             <div class="faq-item">
-              <h3>Quelles sont les qualifications de vos infirmiers ?</h3>
+              <h3>Quelles sont les qualifications de vos professionnels de santé ?</h3>
               <div class="faq-content">
                 <p>
                     Nos professionnels de santé sont des experts reconnus dans leur domaine, avec plusieurs années

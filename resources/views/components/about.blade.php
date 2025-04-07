@@ -10,7 +10,7 @@
                     <i class="fa-solid fa-staff-snake flex-shrink-0"></i>
                     <div>
                         <h4><a href="" class="stretched-link">Plus d’expérience</a></h4>
-                        <p>Nos infirmiers sont hautement qualifiés et expérimentés, offrant des soins de qualité avec une attention particule</p>
+                        <p>Nos infirmiers sont hautement qualifiés et expérimentés, offrant des soins de qualité avec une attention particulière</p>
                     </div>
                 </div>
 
@@ -18,7 +18,7 @@
                     <i class="fa-solid fa-hand-holding-medical flex-shrink-0"></i>
                     <div>
                         <h4><a href="" class="stretched-link">La meilleure solution</a></h4>
-                        <p>Gagnez du temps avec nos soins à domicile. Nos infirmiers se déplacent directement chez vous pour dispenser des soins personnalisé</p>
+                        <p>Gagnez du temps avec nos soins à domicile. Nos infirmiers se déplacent directement chez vous pour dispenser des soins personnalisés</p>
                     </div>
                 </div>
 

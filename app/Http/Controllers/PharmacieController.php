@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Periode;
 use App\Models\Pharmacie;
 use Illuminate\Http\Request;
 
@@ -40,13 +41,15 @@ class PharmacieController extends Controller
      }
 
      // Afficher le formulaire d'édition
-     public function edit(Pharmacie $pharmacie)
+     public function edit($id)
      {
+         $pharmacie = Pharmacie::findOrFail($id);
          return view('admin.editPharmacie', compact('pharmacie'));
      }
 
+
      // Mettre à jour une pharmacie
-     public function update(Request $request, Pharmacie $pharmacie)
+     public function update(Request $request, $id)
      {
          $request->validate([
              'name' => 'required|string|max:255',
@@ -54,9 +57,12 @@ class PharmacieController extends Controller
              'address' => 'required|string',
          ]);
 
+         $pharmacie = Pharmacie::findOrFail($id);
          $pharmacie->update($request->all());
+
          return redirect()->route('pharmacie.index')->with('success', 'Pharmacie mise à jour avec succès');
      }
+
 
      // Supprimer une pharmacie
      public function destroy($id)
@@ -67,9 +73,11 @@ class PharmacieController extends Controller
      }
 
 
-     public function onDutyPharmacies()
+    //  affichage de la liste de pharmacie de garde dans le site même
+    public function onDutyPharmacies()
 {
+    $periodes = Periode::all();
     $pharmacies = Pharmacie::all();
-    return view('pharmacie', compact('pharmacies'));
+    return view('pharmacies', compact('pharmacies', 'periodes' ));
 }
 }

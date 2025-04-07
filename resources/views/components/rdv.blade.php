@@ -6,7 +6,8 @@
     </div>
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <form id="appointmentForm" role="form" class="php-email-form" action="#" method="post">
+        {{-- correction en enlevant la methode et l'action qui posait le problème de l'erreur 405 --}}
+        <form id="appointmentForm" role="form" class="php-email-form">
             <div class="row">
                 <div class="col-md-4 form-group">
                     <label for="name" class="form-label">Nom complet</label>
@@ -31,11 +32,16 @@
                         <option value="prelevement">Prise de sang à domicile pour analyses médicales</option>
                     </select>
                 </div>
+                {{-- localisation du user --}}
                 <div class="col-md-6 form-group">
-                    <label for="location" class="form-label">Localisation ( Ouvrez Google Maps, recherchez votre adresse exacte,
-                        cliquez sur "Partager" et copiez le lien à coller ici 😊)</label>
-                    <input type="text" class="form-control" id="location" name="location" placeholder="Votre localisation" required>
+                    <label for="location" class="form-label">Localisation (Cliquez sur le champ pour sélectionner votre position actuelle)</label>
+                    <input type="text" class="form-control" id="location" name="location" placeholder="Cliquez pour localiser..." readonly required>
+
+                    <div id="map" style="height: 300px; display: none; margin-top: 10px;"></div>
+
+                    <button type="button" id="confirmLocation" class="btn btn-sm btn-success mt-2" style="display: none;">Valider ma position</button>
                 </div>
+
             </div>
 
             <div class="form-group mt-3">

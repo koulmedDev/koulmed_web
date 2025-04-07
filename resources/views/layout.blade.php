@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>KOULMED</title>
+  <title>Koulmed</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="{{asset('images/logo.png')}}" rel="icon">
-  <link href="{{asset('Med/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{asset('images/logotype.png')}}" rel="icon">
+  <link href="{{asset('images/logotype.png')}}" rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -57,8 +57,8 @@
 
   <!-- Main JS File -->
   <script src="{{asset('Med/assets/js/main.js')}}"></script>
-  <!-- Ajoutez ces scripts à la fin de votre document avant la fermeture du body -->
-{{-- <script src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API_GOOGLE&callback=initMap" async defer></script> --}}
+  <!-- pour la geolocalisation -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API"></script>
 
 
 </body>
