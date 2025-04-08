@@ -8,7 +8,7 @@
   <link href="{{asset('images/logotype.png')}}" rel="icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
-     :root {
+    :root {
       --primary: #2563eb;
       --secondary: #10b981;
       --light: #f0fdf4;
@@ -200,6 +200,14 @@
       font-size: 0.9rem;
     }
 
+    .footer1 {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 20px;
+      color:linear-gradient(110deg, #78BA25 0%, #0056b3 100%);
+      font-size: 2rem;
+    }
+
     @media (max-width: 768px) {
       .pharmacy-grid {
         grid-template-columns: 1fr;
@@ -221,25 +229,23 @@
       <img src="{{ asset('images/logo.png') }}" alt="Koulmed Logo" class="logo" />
     </div>
     <h1>Pharmacies de Garde - Lomé</h1>
-        @forelse($periodes as $periode)
-        <span class="period">
-            <i class="fas fa-calendar-alt"></i>
-            {{ $periode->titre }}
-        </span>
+    @forelse($periodes as $periode)
+      <span class="period">
+        <i class="fas fa-calendar-alt"></i>
+        {{ $periode->titre }}
+      </span>
     @empty
-        <p>Aucune période définie.</p>
+      <p>Aucune période définie.</p>
     @endforelse
-
   </div>
 
   <div class="search-container">
     <input type="text" class="search-input" id="searchInput" placeholder="Rechercher une pharmacie par nom ou quartier..." />
   </div>
 
-  <div class="pharmacy-grid">
-    <!-- Affichage des pharmacies -->
+  <div class="pharmacy-grid" id="pharmacyGrid">
     @forelse($pharmacies as $pharmacy)
-      <div class="pharmacy-card">
+      <div class="pharmacy-card" data-name="{{ strtolower($pharmacy->name) }}" data-address="{{ strtolower($pharmacy->address) }}">
         <div class="pharmacy-content">
           <div class="pharmacy-header">
             <div class="icon-container">
@@ -262,21 +268,31 @@
     @endforelse
   </div>
 
+  <div class="footer1">
+    <p>Koulmed souhaite une Prompte guérison aux patients</p>
+  </div>
   <div class="footer">
     <p>© 2025 Koulmed - Liste mise à jour le {{ now()->format('d M Y H:i') }}</p>
   </div>
 
   <script>
-    // Fonctionnalité de recherche
     const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase();
-            const filteredPharmacies = pharmacies.filter(pharmacy =>
-                pharmacy.name.toLowerCase().includes(searchTerm) ||
-                pharmacy.address.toLowerCase().includes(searchTerm)
-            );
-            generatePharmacyCards(filteredPharmacies);
-        });
+    const pharmacyCards = document.querySelectorAll('.pharmacy-card');
+
+    searchInput.addEventListener('input', function () {
+      const term = this.value.toLowerCase();
+
+      pharmacyCards.forEach(card => {
+        const name = card.getAttribute('data-name');
+        const address = card.getAttribute('data-address');
+
+        if (name.includes(term) || address.includes(term)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
   </script>
 </body>
 </html>

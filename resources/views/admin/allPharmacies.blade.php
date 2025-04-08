@@ -15,6 +15,10 @@
                         <div class="alert alert-success">{{ session('success') }}</div>
                     @endif
 
+                    <div class="d-flex justify-content-between mt-4">
+                        <a href="{{ route('pharmacie.form') }}" class="btn btn-success">Ajouter une pharmacie</a>
+                    </div> <br><br><br>
+
                     @if($pharmacies->isEmpty())
                         <div class="alert alert-warning text-center">
                             Aucune pharmacie de garde n'est encore enrégistrée.
