@@ -6,13 +6,7 @@
       <p></p>
     </div><!-- End Section Title -->
 
-    {{-- <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-      <iframe style="border:0; width: 100%; height: 370px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div> --}}
-    <!-- End Google Maps -->
-
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-
       <div class="row gy-4">
         <div class="col-lg-6 ">
           <div class="row gy-4">
@@ -26,29 +20,33 @@
             </div><!-- End Info Item -->
 
             <div class="col-md-6">
-              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone"></i>
-                <h3>Appeler</h3>
-                <p>+228 91259103</p>
-              </div>
+              <a href="tel:+22891259103" style="text-decoration: none; color: inherit;">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Appeler</h3>
+                  <p>+228 91259103</p>
+                </div>
+              </a>
             </div><!-- End Info Item -->
 
             <div class="col-md-6">
-              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope"></i>
-                <h3>Email</h3>
-                <p>koulmedservice@gmail.com</p>
-              </div>
+              <a href="mailto:koulmedservice@gmail.com" style="text-decoration: none; color: inherit;">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p>koulmedservice@gmail.com</p>
+                </div>
+              </a>
             </div><!-- End Info Item -->
 
           </div>
         </div>
 
         <div class="col-lg-6">
-          <div class="alert alert-warning d-flex align-items-center" role="alert">
-              <i class="bi bi-exclamation-triangle-fill me-2"></i>
-              Service de messagerie bientôt disponible, veuillez pour l’instant nous contacter via WhatsApp pour vos avis ou recommandations.
-          </div>
+            <div class="alert alert-info d-flex align-items-center" role="alert">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                Vous pouvez nous contacter pour toute question concernant nos services, pour obtenir des renseignements, faire des suggestions ou partager votre avis. Notre équipe se fera un plaisir de vous répondre rapidement.
+              </div>
           <form action="{{ route('contact.send') }}" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
             @csrf
             <div class="row gy-4">
@@ -75,14 +73,18 @@
                 <div class="sent-message">Votre message à été envoyé. Merci!</div>
 
                 <button type="submit">Envoyer</button>
+                <a href="https://wa.me/22891259103" target="_blank" class="btn btn-success">
+                    <i class="bi bi-whatsapp me-1"></i> Contacter via WhatsApp
+                  </a>
+
               </div>
 
             </div>
           </form>
-        </div><!-- End Contact Form -->
+        </div>
+        <!-- End Contact Form -->
 
       </div>
-
     </div>
 
   </section>
