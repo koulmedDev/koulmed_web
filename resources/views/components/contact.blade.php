@@ -54,7 +54,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 @endif
-          <form action="{{ route('contact.send') }}" method="POST" data-aos="fade-up" data-aos-delay="500">
+          <form action="https://formspree.io/f/meogqalg" method="POST" data-aos="fade-up" data-aos-delay="500">
             @csrf
             <div class="row gy-4">
 

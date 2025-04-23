@@ -58,7 +58,7 @@
   <!-- Main JS File -->
   <script src="{{asset('Med/assets/js/main.js')}}"></script>
   <!-- pour la geolocalisation -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhHuPaKfJ1yreSqUV3zMrgJtgnOQ2po8w"></script>
 
 
 </body>
