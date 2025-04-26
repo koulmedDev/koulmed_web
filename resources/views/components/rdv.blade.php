@@ -7,7 +7,7 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
         {{-- correction en enlevant la methode et l'action qui posait le problème de l'erreur 405 --}}
-        <form id="appointmentForm" role="form" class="php-email-form">
+        <form id="appointmentForm" role="form" class="email-form" >
             <div class="row">
                 <div class="col-md-4 form-group">
                     <label for="name" class="form-label">Nom complet</label>
