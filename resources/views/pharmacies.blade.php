@@ -224,7 +224,7 @@
         <h1>Pharmacies de Garde - Lomé</h1>
         <span class="period">
             <i class="fas fa-calendar-alt"></i>
-            Du 21 au 28 Avril 2025
+            Du 28 Avril au 05 Mai  2025
         </span>
     </div>
 
