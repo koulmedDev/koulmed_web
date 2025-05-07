@@ -224,7 +224,7 @@
         <h1>Pharmacies de Garde - Lomé</h1>
         <span class="period">
             <i class="fas fa-calendar-alt"></i>
-            Du 28 Avril au 05 Mai  2025
+            Du 06  au 12 Mai  2025
         </span>
     </div>
 
@@ -239,7 +239,7 @@
     </div>
 
     <div class="footer">
-        <p>© 2025 Koulmed - Liste mise à jour le 21 Avril 2025</p>
+        <p>© 2025 Koulmed - Liste mise à jour le 05 Mai 2025</p>
     </div>
 
     <script>
