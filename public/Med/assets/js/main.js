@@ -229,8 +229,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const whatsappNumber = "22891259103";
 
-        // lien WhatsApp
+        // lien WhatsApp compatible avec tous les appareils
         const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        // Détection de l'appareil iOS
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
         // Afficher le message de chargement
         document.querySelector('.loading').style.display = 'block';
@@ -243,8 +246,25 @@ document.addEventListener('DOMContentLoaded', function() {
             // Afficher le message de succès
             document.querySelector('.sent-message').style.display = 'block';
 
-            // Rediriger vers WhatsApp
-            window.open(whatsappLink, '_blank');
+            // Pour iOS, utiliser une approche différente
+            if (isIOS) {
+                // Créer un lien temporaire et déclencher un clic
+                const tempLink = document.createElement('a');
+                tempLink.setAttribute('href', whatsappLink);
+                tempLink.setAttribute('target', '_blank');
+                tempLink.setAttribute('rel', 'noopener noreferrer');
+                tempLink.style.display = 'none';
+                document.body.appendChild(tempLink);
+                tempLink.click();
+
+                // Alternative: essayer d'ouvrir directement avec window.location
+                setTimeout(() => {
+                    window.location = whatsappLink;
+                }, 300);
+            } else {
+                // Pour les autres appareils, utiliser window.open comme avant
+                window.open(whatsappLink, '_blank');
+            }
 
             // Réinitialiser le formulaire après un court délai
             setTimeout(function() {
