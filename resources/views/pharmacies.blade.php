@@ -228,7 +228,7 @@
         <h1>Pharmacies de Garde - Lomé</h1>
         <span class="period">
             <i class="fas fa-calendar-alt"></i>
-            Du  23 au 30 Juin 2025
+            Du  30 Juin au 07 Juillet 2025
         </span>
     </div>
 
@@ -243,7 +243,7 @@
     </div>
 
     <div class="footer">
-        <p>© 2025 Koulmed - Liste mise à jour le 23 Juin 2025</p>
+        <p>© 2025 Koulmed - Liste mise à jour le 30 Juin 2025</p>
     </div>
 
     <script>
